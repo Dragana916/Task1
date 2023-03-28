@@ -34,7 +34,7 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.my_vpc.id
 
   tags = {
-    Name    = "aurora-stack-internet-gateway"
+    Name    = "internet_gateway"
   }
 }
 

@@ -17,7 +17,7 @@ module "db" {
   # DB subnet group
 #   db_subnet_group_name   = "subnet_group_db"
   create_db_subnet_group = true
-  subnet_ids            = ["subnet-08cbae04e8e8e1f4e", "subnet-026efdd357497fd23"]
+  subnet_ids            = [aws_subnet.private_subnet_1.id, aws_subnet.private_subnet_2.id]
   create_db_parameter_group = "false"
   create_db_option_group    = "false"
   skip_final_snapshot       = "true"

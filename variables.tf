@@ -8,6 +8,11 @@ variable "public_subnet_cidr" {
     default = "10.0.3.0/24"
 }
 
+variable "public_subnet_2_cidr" {
+    type = string
+    default = "10.0.4.0/24"
+}
+
 variable "private_subnet_1_cidr" {
     default = "10.0.1.0/24"
 }
@@ -27,4 +32,9 @@ variable "availability_zone_2" {
 variable "region"{
     type = string
     default = "us-west-2"
+}
+
+variable "actions_enabled_up" {
+    description = "Do you want to enable automatic upscaling?"
+    default = true
 }
